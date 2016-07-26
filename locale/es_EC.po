@@ -1,0 +1,35 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:nodux_sale_payment_term_pymes.add_payment_term_form,dias:"
+msgid "Numero de dias"
+msgstr ""
+
+msgctxt "field:nodux_sale_payment_term_pymes.add_payment_term_form,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "help:nodux_sale_payment_term_pymes.add_payment_term_form,dias:"
+msgid "Ingrese el numero de dias en los que se realizara el pago"
+msgstr ""
+
+msgctxt "model:nodux_sale_payment_term_pymes.add_payment_term_form,name:"
+msgid "Add Term Form"
+msgstr ""
+
+msgctxt "view:nodux_sale_payment_term_pymes.add_payment_term_form:"
+msgid "Credito"
+msgstr ""
+
+msgctxt "view:sale.sale:"
+msgid "Agregar Credito"
+msgstr "Agregar crédito"
+
+msgctxt "wizard_button:nodux_sale_payment_term_pymes.add_term,start,add_:"
+msgid "Add"
+msgstr "Añadir"
+
+msgctxt "wizard_button:nodux_sale_payment_term_pymes.add_term,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
