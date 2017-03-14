@@ -27,7 +27,7 @@ class Sale():
         super(Sale, cls).__setup__()
         cls._buttons.update({
                 'wizard_add_term': {
-                    'invisible': ((Eval('state') != 'draft') | (Eval('invoice_state') != 'none')),
+                    'invisible': (Eval('invoice_state') != 'none') & (Eval('state') != 'draft'),
                     'readonly': ~Eval('lines', [0])
                     },
 
