@@ -33,7 +33,7 @@ class Sale():
 
                 'wizard_sale_payment': {
                     'readonly': ~Eval('lines', [0]),
-                    'invisible': Eval('invoice_state') != 'none'
+                    'invisible': (Eval('invoice_state') != 'none') & (Eval('state') != 'draft')
                     },
                 })
 
@@ -92,7 +92,8 @@ class WizardAddTerm(Wizard):
                 for t in terms:
                     term = t
                     eliminar =  term.id
-                    cursor = Transaction().cursor
+                    transaction = Transaction()
+                    cursor = transaction.connection.cursor()
                     cursor.execute('DELETE FROM account_invoice_payment_term_line WHERE payment = %s' % eliminar)
             else:
                 term.name = 'CREDITO'
